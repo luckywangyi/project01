@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="https://www.google.com/search">
+    <div class = "search"><label>
+        <input type="text" name="q">
+    </label>
+        <input type="submit" value="Google Search">
+    </div>
+</form>
+
+<button id="advanced" onclick="navigateToAdvanced()">Advanced Search</button>
+<script>
+    function navigateToAdvanced(){
+        window.location.href = 'advanced_search.html';
+    }
+</script>
+
+</body>
+</html>
