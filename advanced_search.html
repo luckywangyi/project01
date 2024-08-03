@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <title>Advanced_Search</title>
     <style>
-        .logo{
-            width:400px ;
+        .logo {
+            width: 400px;
             height: 300px;
         }
-        .logo img{
+
+        .logo img {
             width: 100%;
             height: 100%;
         }
     </style>
 </head>
 <body>
+<div class="navbar">
+    <a href="index.html">
+        Google Search
+    </a>
+</div>
+
+<form>
+
+</form>
+
 <div class="logo">
     <img src="Project01_photo/google.jpg" alt="Google">
 </div>
 
-<form>
-    <input type="text" name="">
+<form action="https://www.google.com/search">
+    <div>
+        <label for="as_q">All these words:</label>
+        <input id="as_q" name="as_q" type="text" value="" autofocus>
+    </div>
+    <div>
+        <label for="as_epq">This exact word or phrase:</label>
+        <input id="as_epq" name="as_epq" type="text" value="">
+    </div>
+    <div>
+        <label for="as_oq">any of this name</label>
+        <input id="as_oq" name="as_oq" type="text" value="">
+    </div>
+    <div>
+        <label for="field5">numbers ranging from:
+            <input type="text" id="field5" value="" name="as_nlo">
+            <span style="color: rebeccapurple">to</span>
+            <input type="text" id="field" value="" name="as_nhi">
+        </label>
+    </div>
+    <input type="submit" value="advanced search">
 </form>
 
-<button id="common" onclick="navigateToCommon()">Google Search</button>
-
-<script>
-    function navigateToCommon(){
-        window.location.href='index.html';
-    }
-</script>
 </body>
 </html>
